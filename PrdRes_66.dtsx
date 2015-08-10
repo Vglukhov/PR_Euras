@@ -1,0 +1,191 @@
+<?xml version="1.0"?><DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts" DTS:ExecutableType="SSIS.Package.2">
+<DTS:Property DTS:Name="PackageFormatVersion">3</DTS:Property>
+<DTS:Property DTS:Name="VersionComments"></DTS:Property>
+<DTS:Property DTS:Name="CreatorName">RUSYSTEM\estrokin</DTS:Property>
+<DTS:Property DTS:Name="CreatorComputerName">DELTA</DTS:Property>
+<DTS:Property DTS:Name="CreationDate" DTS:DataType="7">6/10/2013 3:15:39 PM</DTS:Property>
+<DTS:Property DTS:Name="PackageType">0</DTS:Property>
+<DTS:Property DTS:Name="ProtectionLevel">1</DTS:Property>
+<DTS:Property DTS:Name="MaxConcurrentExecutables">-1</DTS:Property>
+<DTS:Property DTS:Name="PackagePriorityClass">0</DTS:Property>
+<DTS:Property DTS:Name="VersionMajor">1</DTS:Property>
+<DTS:Property DTS:Name="VersionMinor">0</DTS:Property>
+<DTS:Property DTS:Name="VersionBuild">17</DTS:Property>
+<DTS:Property DTS:Name="VersionGUID">{BB3E9A38-13B4-49A8-B9AD-7D7F530BFBDE}</DTS:Property>
+<DTS:Property DTS:Name="EnableConfig">-1</DTS:Property>
+<DTS:Property DTS:Name="CheckpointFileName"></DTS:Property>
+<DTS:Property DTS:Name="SaveCheckpoints">0</DTS:Property>
+<DTS:Property DTS:Name="CheckpointUsage">0</DTS:Property>
+<DTS:Property DTS:Name="SuppressConfigurationWarnings">0</DTS:Property>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Prodresurs</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{7B0774F5-C36F-4B29-B60B-71FA76120009}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:PropertyExpression DTS:Name="InitialCatalog">@[User::dbName_66]</DTS:PropertyExpression><DTS:PropertyExpression DTS:Name="ServerName">@[User::dbServer_66]</DTS:PropertyExpression><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property>
+<DTS:Property DTS:Name="ConnectionString">Data Source=STMT\STMT;Initial Catalog=PR_Euras;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-PrdRes_66-{7B0774F5-C36F-4B29-B60B-71FA76120009}Prodresurs;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">txtDirectory</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::txtDirectory_66].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Конфигурация 1</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{D6448969-C910-447A-99E5-BA7471AF2D89}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">dbName</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::dbName_66].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Конфигурация 2</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{84AF0F00-AE50-4B69-B156-39F59DBF26C8}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">dbServer</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::dbServer_66].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Конфигурация 3</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{96549691-4B6A-4B98-AD43-DDF51079F5D4}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Property DTS:Name="LastModifiedProductVersion">10.50.1600.1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">1049</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8">PR_Euras</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">dbName_66</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{D57B99C3-BFB1-468B-BE73-2589DB2999C8}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8">STMT\STMT</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">dbServer_66</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{E87F943F-8487-4369-9860-33FED021F188}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8">l:\OLAP_TXT\Euraz_Ekb\</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">txtDirectory_66</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B1DB4C5C-A7D2-401F-AAFC-D966CC787E25}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" DTS:ThreadHint="0">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Filling M_TRANS</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{364677F3-E2B0-44A3-B60E-B47F8442BA66}</DTS:Property>
+<DTS:Property DTS:Name="Description">Filling M_TRANS</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><SQLTask:SqlTaskData SQLTask:Connection="{7B0774F5-C36F-4B29-B60B-71FA76120009}" SQLTask:TimeOut="0" SQLTask:IsStoredProc="False" SQLTask:BypassPrepare="True" SQLTask:SqlStmtSourceType="DirectInput" SQLTask:SqlStatementSource="truncate table m_trans&#xA;go&#xA;&#xA;insert into m_trans (ДатаРасч, Накл, Скл, ОпТип, Клн, &#xA;    КлнТип, Возврат, Сотрудник, ДатаИсх, НашаФирма,Сумма)&#xA;(select ОпДатаРасч, ОпНакл, ОпСкл, ОпТип, ОпКлн, &#xA;    ОпКлнТип, ОпВозврат, ОпСотр, ОпДатаИсх, НашаФирма,&#xA;    ISNULL((select SUM(ОпЦена * ОпКол)&#xA;    FROM hist_skl h&#xA;    where l.ОпНакл = h.ОпНакл&#xA;        and l.ОпСкл = h.ОпСкл&#xA;        and l.ОпТип = h.ОпТип&#xA;    ),0) +&#xA;    ISNULL(&#xA;    (&#xA;    select SUM(УслЦена * УслКол)&#xA;    FROM hist_usl h&#xA;    where l.ОпНакл = h.УслНомер&#xA;        and l.ОпСкл = h.УслСкл&#xA;        and l.ОпТип = h.УслОпер&#xA;    ),0)&#xA;from list_skl l    &#xA;where ОпКлнТип=2 and left(right(dbo.dec2bit(ОпБит), 16), 1)='0'&#xA;)&#xA;go&#xA;/*insert into m_trans (ДатаРасч, Накл, Скл, ОпТип, Клн, &#xA;    КлнТип, Возврат, Сотрудник, ДатаИсх, НашаФирма,Сумма)&#xA;(select ОпДатаРасч, ОпНакл, ОпСкл, ОпТип, ОпКлн, &#xA;    ОпКлнТип, ОпВозврат, ОпСотр, ОпДатаИсх, НашаФирма,&#xA;    ISNULL((select SUM(ОпЦена * ОпКол)&#xA;    FROM history.hist_skl h&#xA;    where l.ОпНакл = h.ОпНакл&#xA;        and l.ОпСкл = h.ОпСкл&#xA;        and l.ОпТип = h.ОпТип&#xA;    ),0) +&#xA;    ISNULL(&#xA;    (&#xA;    select SUM(УслЦена * УслКол)&#xA;    FROM history.hist_usl h&#xA;    where l.ОпНакл = h.УслНомер&#xA;        and l.ОпСкл = h.УслСкл&#xA;        and l.ОпТип = h.УслОпер&#xA;    ),0)&#xA;from history.list_skl l    &#xA;where ОпКлнТип=2&#xA;)*/&#xA;go&#xA;&#xA;&#xA;&#xA;-- 27.10.2005&#xA;-- По информации от Локиса платежи с ПлатТип &gt;= 40&#xA;-- относятся к категории взаимозачетов&#xA;&#xA;INSERT INTO M_TRANS ([ДатаРасч], Клн, КлнТип, ПлатКод, &#xA;    ПлатРежим, ПлатНом, ПлатТип, Сумма, ДатаИсх,[НашаФирма])&#xA;select ПлатДатаОплРасч, ПлатКлнКод, 2, ПлатКод, ПлатНапр,&#xA;    ПлатНом, ПлатТип, ПлатСумма, ПлатДата&#xA;    ,&#xA;    (SELECT top 1 [НашаФирма] &#xA;    FROM DKM_BASI d&#xA;    where --dkm_base.ПлатКлнКод = d.[ДОКодКлн] AND --ЕФ 20150519 - из-за этого фильтра не отбирается строка&#xA;          dkm_base.[ПлатКод] = d.[ДОКодПлат])    &#xA;from dkm_base&#xA;where ПлатТип &lt; 40 and ПлатКлнСотр = 1 --and ПлатКод &gt;=0&#xA;&#xA;/*INSERT INTO M_TRANS ([ДатаРасч], Клн, КлнТип, ПлатКод, &#xA;    ПлатРежим, ПлатНом, ПлатТип, Сумма, ДатаИсх,[НашаФирма])&#xA;select ПлатДатаОплРасч, ПлатКлнКод, 2, ПлатКод, ПлатНапр,&#xA;    ПлатНом, ПлатТип, ПлатСумма, ПлатДата&#xA;    ,&#xA;    (SELECT top 1 [НашаФирма] &#xA;    FROM history.DKM_BASI d&#xA;    where dkm_base.ПлатКлнКод = d.[ДОКодКлн] AND&#xA;          dkm_base.[ПлатКод] = d.[ДОКодПлат])&#xA;from history.dkm_base&#xA;where ПлатТип &lt; 40 and ПлатКлнСотр = 1 and ПлатКод &gt;=0&#xA;go*/&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;update M_TRANS&#xA;set [МенеджерНакладной] = &#xA;(&#xA;SELECT&#xA;CASE WHEN k.СотрФамилия is not null and k.СотрИмя is not null and k.СотрОтчество is not null THEN ltrim(rtrim(k.СотрФамилия))+char(32)+ltrim(rtrim(k.СотрИмя))+char(32)+ltrim(rtrim(k.СотрОтчество))&#xA;     WHEN k.СотрФамилия IS not null and k.СотрИмя is not null and k.СотрОтчество is null THEN ltrim(rtrim(k.СотрФамилия))+char(32)+ltrim(rtrim(k.СотрИмя))&#xA;     WHEN k.СотрФамилия is not null and k.СотрИмя is null THEN ltrim(rtrim(k.СотрФамилия))&#xA;    END&#xA;    AS FIO&#xA;FROM KAT_PPL as k&#xA;WHERE k.СотрКод = M_TRANS.Сотрудник&#xA;)" SQLTask:CodePage="1252" SQLTask:ResultType="ResultSetType_None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask"/></DTS:ObjectData></DTS:Executable>
+<DTS:Property DTS:Name="ObjectName">PrdRes_66</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{1E14155E-13F1-4081-B7E7-0501B11D14D8}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Package.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;-5033&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;-4159&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="5" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6033" scrolltop="-5159" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="28072" y="14076" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Filling M_TRANS" left="-5033" top="-4159" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{364677F3-E2B0-44A3-B60E-B47F8442BA66}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;dwd:PersistedViewPortLeft&gt;-6033&lt;/dwd:PersistedViewPortLeft&gt;&lt;dwd:PersistedViewPortTop&gt;-5159&lt;/dwd:PersistedViewPortTop&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{1E14155E-13F1-4081-B7E7-0501B11D14D8}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{1D91C774-8092-4A43-9C20-DC0A9B07C7DE}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;-5033&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;-4159&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="5" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6033" scrolltop="-5159" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="28072" y="14076" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Filling M_TRANS" left="-5033" top="-4159" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{364677F3-E2B0-44A3-B60E-B47F8442BA66}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;dwd:PersistedViewPortLeft&gt;-6033&lt;/dwd:PersistedViewPortLeft&gt;&lt;dwd:PersistedViewPortTop&gt;-5159&lt;/dwd:PersistedViewPortTop&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">package-diagram</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{82FC75CA-758F-484F-8EB3-4C1FCB19BC08}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable></DTS:Executable>
